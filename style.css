@@ -1,0 +1,157 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+/* toto je černá magie, na kterou nešahej! */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+BARVY
+czechitas                 #b92e81
+šedé pozadí stránky       #bdc3c7
+tmavé pozadí pod textem   #31363b
+dělítka mezi tlačítky     #3f464d
+tlačítko portfolio        #e74c3c
+tlačítko facebook         #3b5998
+tlačítko twitter          #1da1f2
+*/
+
+
+body {
+  background-color: #bdc3c7;
+}
+
+
+.jmeno 
+{
+  font-family: Montserrat, sans-serif;
+  color: white;
+}
+
+.odkazy {
+  font-family: Montserrat, sans-serif;
+  background-color: #bdc3c7;
+}
+
+
+.foto {
+  width: 500px;
+}
+
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  background-color: #bdc3c7;
+  color: gainsboro;
+  width: 500px;
+  text-align: block;
+  line-height: 40px;
+  margin: 40px;
+  font-size: 30px;
+  box-shadow: 0px 5px 5px 5px gray;
+}
+
+h1 {
+  color: white;
+}
+
+.hlavicka {
+order: 1;
+flex-shrink: 0;
+}
+
+.logo {
+background-color: #b92e81;
+border-radius: 50%;
+height: 80px;
+width: 80px;
+position: absolute;
+left: 400px;
+top: 320px;
+}
+
+.obsah {
+  order: 2;
+  background-color: #31363b;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.odkazy {
+order: 3;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 500px;
+line-height: 75px;
+font-variant-caps: all-petite-caps;
+border-style: solid;
+border-color: #3f464d;
+}
+
+.portfolio {
+  order: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  background-color: #31363b;
+  color: gainsboro;
+  border-style: solid;
+  border-color: #3f464d;
+  border-width: 1px;
+  text-align: center;
+}
+
+.facebook {
+order: 2;
+flex-basis: 50%;
+background-color: #31363b;
+border-style: solid;
+border-color: #3f464d;
+border-width: 1px;
+text-align: center;
+}
+
+
+.twitter {
+  order: 3;
+  flex-basis: 50%;
+  background-color: #31363b;
+  border-style: solid;
+  border-color: #3f464d;
+  border-width: 1px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+  a:link, a:visited {
+    color: gainsboro;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .portfolio:hover {
+  background-color:#e74c3c;
+  color:white;
+}
+
+.facebook:hover {
+  background-color:#3b5998;
+  color:white;
+}
+
+ .twitter:hover {
+  background-color:#1da1f2;
+  color:white;
+}
+
+
+  
